@@ -1,0 +1,449 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    max-width: 1116px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header{
+    background: #F4F6F9 url(./images/Group\ 10.png) top right /contain no-repeat;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 546px;
+    width: 100%;
+    padding-bottom: 180px;
+}
+.logo{
+    padding: 61px 0 133px 0;
+    display: inline-block;
+}
+h1{
+    max-width: 546px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    display: inline-block;
+    letter-spacing: 0.03em;
+    color: #333333;
+    padding-bottom: 30px;
+}
+.header-paragraph{
+    max-width: 453px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 30px;
+    color: #4F4F4F;
+    font-weight: 400;
+}
+.header-buttons{
+    display: flex;
+    justify-content: start;
+}
+.header-buttons a{
+    display: inline-block;
+}
+.app-store{
+    display: inline-block;
+    padding-right: 35.9px;
+}
+.app-store:hover{
+    opacity: 0.5;
+}
+.google-play{
+    display: inline-block;
+}
+.google-play:hover{
+    opacity: 0.5;
+}
+
+        /* HEADER MEDIA */
+
+@media (max-width: 400px) {
+    .wrapper{
+        justify-content: center;
+    }
+    .container{
+        max-width: unset;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .header{
+        background-image: unset;
+    }
+    .header-content{
+        justify-content: center;
+        align-items: center;
+        max-width: unset;
+        padding-bottom: 59px;
+    }
+    .logo{
+        padding: 34px 0 86px 0;
+    }
+    h1{
+        max-width: unset;
+        font-size: 30px;
+        line-height: 40px;
+        display: flex;
+        text-align: center;
+    }
+    .header-paragraph{
+        max-width: unset;
+        font-size: 16px;
+        line-height: 23px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .header-buttons{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-buttons a img{
+        width: 145.69px;
+        height: 44px;
+    }
+    .app-store{
+        padding-right: 0;
+    }
+
+
+}
+
+
+        /* RONALDO */
+
+
+/* .container{
+    width: 100%;
+    margin: 0 auto;
+} */
+
+.ronaldo{
+    width: 100%;
+    background: url(./images/ronaldo.png) no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+}
+.ronaldo-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.ron-image{
+    display:flex;
+    width: 466px;
+    height: 405.27px;
+    background: url(./images/footbol.png) center center no-repeat;
+    background-size: contain;
+}
+.ron-content{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 56px;
+}
+.blue-title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+   
+}
+.blue-title-ron{
+    padding-top: 130px;
+    padding-bottom: 27px;
+}
+.title-h2{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #333333;
+    padding-bottom: 27px;
+}
+.two-paragraphs{
+    width: 80%;
+}
+.paragraph:first-child{
+    padding-bottom: 27px;
+}
+
+.paragraph{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #4F4F4F;
+}
+.paragraph:last-child{
+    padding-bottom: 22px;
+}
+.blue-link{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+    padding-top: 22px;
+    padding-bottom: 75px;
+}
+.mobile-bg-img{
+    display: block;
+    min-width: 350px ;
+    background: url(./images/mobile-bg-ron.png);
+}
+
+        /* MEDIA RONALDO */
+
+@media (max-width: 400px) {
+    .ronaldo-container{
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+    .ron-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 0;
+    }
+    .ronaldo{
+        background: none;
+    }
+    .ron-image{
+        display:none;
+    }
+    .blue-title{
+        text-align: center;
+        padding: 54px 0 27px;
+    }
+    .title-h2{
+        text-align: center;
+    }
+    .two-paragraphs{
+        width: 100%;
+        text-align: center;
+    }
+    .blue-link{
+        text-align: center;
+        padding-bottom: 22px;
+    }
+    .mobile-bg-img{
+        display: block;
+        width: 388px;
+        height: 360px;
+        background: url(./images/mobile-bg-ron.png) center center no-repeat;
+        background-size: inherit;
+    }
+}
+
+
+
+
+        /* SMARTPHONE */
+
+.smartphone{
+    width: 100%;
+    background: url(./images/smartphone.png) no-repeat;
+    background-size: cover;
+}
+.smart-content{
+    padding: 100px 0;
+}
+.smart-image{
+    
+}
+
+
+        /* SMARTPHONE MEDIA*/
+@media (max-width: 400px) {
+    .smartphone{
+        padding: unset;
+    }
+}
+
+
+
+
+
+        /* BLUE BACKGROUND */
+
+
+.blue-background{
+    width: 100%;
+    background: url(./images/blue-back.png) center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.blue-container-content{
+    display: flex;
+    flex-direction: column;
+    padding: 75px 0;
+}
+.title-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.title-content span{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+
+.nine-items{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 54px;
+}
+.items-column{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+}
+.item-cont{
+    width: 100%;
+    height: 166px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.white-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:37px;
+    height: 37px;
+}
+.white-icon img{
+    width: 100%;
+    height: 100%;
+}
+.white-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+
+        /* cooperations */
+
+
+.cooperations{
+    background: #FAFAFA;
+}
+.coop-container{
+    padding: 57px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.coop-title{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #333333;
+    padding-bottom: 48px;
+}
+.coop-brands{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.coop-brands img{
+    padding: 10px;
+}
+
+        /* niggaphone */
+
+.niggaphone{
+    background: url(./icons/nigga.png) no-repeat;
+    background-position: left top;
+    height: 100%;
+}
+.nigga-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.nigga-content{
+    padding: 105px 0;
+    width: 50%;
+}
+
+        /* footer */
+
+footer{
+    background: #00ADEE;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.white-logo{
+    display: block;
+    padding: 48px 0;
+}
+.footer-content nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-item{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-right: 37px;
+}
+.nav-item:last-child{
+    margin-right: 0;
+}
+.soc-net{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.soc-icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 17px;
+}
+.soc-icon:last-child{
+    margin-right: 0;
+}
